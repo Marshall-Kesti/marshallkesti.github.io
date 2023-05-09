@@ -1,0 +1,56 @@
+insurance <- read.csv("insurance.csv")
+library(tidyverse)
+head(insurance)
+
+#AGE
+# claim: older people pay more health insurance
+# find max and min ages using max() and min() functions
+
+max(insurance$age)
+min(insurance$age)
+
+# discovery: oldest age is 64 and youngest is 18
+# age will be divided by Millenials(18-34), Gen_X(35-50), Baby_Boomers(51-64) using subset() function
+
+Millenials = subset(insurance, age <=34)
+Gen_X = subset(insurance, age >34 & age < 50)
+Baby_Boomers = subset(insurance, age >51)
+
+# find which group on average pays the most using mean() function
+
+mean(Millenials$charges)
+mean(Gen_X$charges)
+mean(Baby_Boomers$charges)
+
+# discovery: on average Baby_Boomers pay the most at 18,298.07, Millenials pay the least amount at 9,673.32, and Gen_X sits in the middle at 13,744.29
+
+
+#BMI
+# claim: Baby_Boomers have higher avergae bmi thus making insurance more
+# we can find this by again using the mean() function
+
+mean(Millenials$bmi)
+mean(Gen_X$bmi)
+mean(Baby_Boomers$bmi)
+
+# discovery: on avergae Baby_Boomers have highest bmi at 31.70, Millenials have lowest at 30.05, and Gen_X sits again in the middle at 30.55
+
+#SMOKER
+# claim: on average Baby_Boomers smoke more than Gen_x and Millenials
+# smoker column includes "yes" and "no" so lets count the yes's in each group using count() function
+
+count(Millenials,smoker, sort = TRUE)
+count(Gen_X,smoker,sort = TRUE)
+count(Baby_Boomers,smoker,sort = TRUE)
+
+# discovery: Millenials "yes" = 116, Gen_x "yes" = 90, Baby_Boomers "yes" = 58
+
+#CLAIMS: 
+#older people pay more health insurance
+#Baby_Boomers have higher avergae bmi thus making insurance more
+#on average Baby_Boomers smoke more than Gen_x and Millenials
+
+#DISOVERIES:
+#on average Baby_Boomers pay the most at 18,298.07, Millenials pay the least amount at 9,673.32, and Gen_X sits in the middle at 13,744.29
+#on avergae Baby_Boomers have highest bmi at 31.70, Millenials have lowest at 30.05, and Gen_X sits again in the middle at 30.55
+#Millenials "yes" = 116, Gen_x "yes" = 90, Baby_Boomers "yes" = 58 meaning Millenials smoke the most
