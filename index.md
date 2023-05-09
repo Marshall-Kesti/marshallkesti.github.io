@@ -15,7 +15,7 @@ In this personal project I analyzed the data set _insurance.csv_ which I found o
 
 ### Process
 
-The first thing we will do is download ```tidyverse()``` which is the package we will use for this analysis, the data set we will be working with ```insurance.csv```, and the ```head()``` function so that we can preview the data set. 
+The first thing we will do is download ```tidyverse()``` which is the package we will use for this analysis, the data set we will be working with ```insurance.csv```, and the ```head()``` function. Then, we will use the ``head`` function to preview the data.
 
 ```r
 # R code with syntax highlighting
