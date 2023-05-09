@@ -1,3 +1,5 @@
 theme: jekyll-theme-minimal
 title: Marshall Kesti
 logo: /assets/me.png
+description: I am Marshall Kesti an aspiring Data Analyst from Minneaplis Minnesota who uses tools such as Tableu, Rstudio, SQL and more to make data driven decisons!
+show_downloads: true
