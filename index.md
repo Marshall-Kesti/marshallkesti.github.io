@@ -90,14 +90,16 @@ mean(baby_boomers$charges)
 
 From this function, we see that on average ```baby_boomers``` pay 18,298.07 for health insurance which means they pay the most compared to the other groups. This discovery makes the first claim that _older people pay more for health insurance compared to younger individuals_ correct.
 
-Let's create a data visualization to show us how age affects the price of health insurance. To do this, we will use ```ggplot()``` which is apart of the ```tidyverse``` package we downloaded at the beginning. 
+Let's create a data visualization to show us how age affects the price of health insurance. To do this, we will use ```ggplot()``` which is apart of the ```tidyverse``` package we downloaded at the beginning. We also will use the function ```labs()``` to give the visualization a title and a caption that will contain the data source.
 
 ```r
-ggplot(insurance, aes(x=age, y=charges,fill=age)) +
-  geom_bar(stat = "identity") + theme_minimal()
+ggplot(insurance, aes(x=age, y= charges,color=age)) +
+  geom_line(stat = "identity") + theme_minimal() +
+  labs(title = "Comparing Age to Health Insurance Price",
+       caption = "Data source: insurance.csv from Kaggle User Alexis Cook")
 ```
 
 ```
 #R ouput
 ```
-![R Output](https://raw.githubusercontent.com/Marshall-Kesti/marshallkesti.github.io/main/assets/Datavis.png)
+![R Output](https://raw.githubusercontent.com/Marshall-Kesti/marshallkesti.github.io/main/assets/datavis.png)
