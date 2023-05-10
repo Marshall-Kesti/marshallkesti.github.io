@@ -3,10 +3,7 @@ layout: default
 ---
 
 # Welcome to My Portfolio!
-Below you will find projects that I have done in Rstudio, pages that will bring you to my Tableu, SQL, and Excel projects.
-
-[Tableu Project Page](https://github.com/Marshall-Kesti/marshallkesti.github.io/blob/main/another-page.md).
-
+Below you will find projects that I have done in Rstudio, Tableu, SQL, and Excel.
 
 ---
 # Rstudio Projects
