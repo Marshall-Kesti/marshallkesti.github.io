@@ -88,5 +88,5 @@ mean(baby_boomers$charges)
 [1] 18298.07
 ```
 
-From this function, we see that on average ```baby_boomers``` pay 18,298.07 for health insurance which means they pay the most compared to the other groups. This discovery makes the first claim that older people pay more for health insurance compared to younger individuals correct.
+From this function, we see that on average ```baby_boomers``` pay 18,298.07 for health insurance which means they pay the most compared to the other groups. This discovery makes the first claim that _older people pay more for health insurance compared to younger individuals_ correct.
 
