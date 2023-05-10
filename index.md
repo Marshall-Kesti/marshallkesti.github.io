@@ -13,7 +13,11 @@ Below you will find projects that I have done in Rstudio, Tableu, SQL, and Excel
 ## _Insurance Analysis_ Project
 ### Description
 
-In this personal project I analyzed the data set _insurance.csv_ which I found on Kaggle from the user Alexis Cook. The purpose of this analysis was to discover if the following claims were correct or incorrect: older people pay more for health insurance compared to younger individuals, older people have a higher BMI(Body Mass Index) causing their health insurance to be more, and on average the number of older individuals that smoke is greater than younger people.
+In this personal project I analyzed the data set _insurance.csv_ which I found on Kaggle from the user Alexis Cook. The purpose of this analysis was to discover if the following claims were correct or incorrect: older people pay more for health insurance compared to younger individuals, older people have a higher BMI(Body Mass Index) causing their health insurance to be more, and on average the number of older individuals that smoke is greater than younger people. 
+
+#### DISCLAIMER
+
+While this is a personal project, the sample size amongst the ages represented in the data set _insurance.csv_ is not consistent amongst each group. The findings below are accurate pertaining to this data but do not represent the population as a whole.
 
 ### Process
 
@@ -149,3 +153,8 @@ count(baby_boomers,smoker,sort = TRUE)
 1     no 269
 2    yes  58
 ```
+
+Looking at the ```yes``` we see that millenials have the most smokers making the claim _on average the number of older individuals that smoke is greater than younger people_ untrue. 
+
+### Conclussion
+During this project, we discovered that older people pay more for health insurance compared to younger individuals, older people have a higher BMI(Body Mass Index) causing their health insurance to be more, and that millenials smoke more than the other two groups baby boomers and gen x. Although this was a personal project, these findings have some real world use. Becuase of this analysis people could get an idea for when to expect their health insurance price to increase and how an unhealthy lifestyle could cost them more. 
