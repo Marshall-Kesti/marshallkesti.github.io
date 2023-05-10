@@ -97,7 +97,7 @@ ggplot(insurance, aes(x=age, y=charges,fill=age)) +
   geom_bar(stat = "identity") + theme_minimal()
 ```
 
-```r
+```
 #R ouput
 ```
 ![R Output](https://raw.githubusercontent.com/Marshall-Kesti/marshallkesti.github.io/main/assets/Datavis.png)
