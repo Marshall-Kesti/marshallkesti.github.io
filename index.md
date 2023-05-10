@@ -112,8 +112,8 @@ mean(gen_x$bmi)
 mean(baby_boomers$bmi)
 ```
 
-```
-# R output
+```r
+#R output
 mean(millenials$bmi)
 [1] 30.05137
  mean(gen_x$bmi)
