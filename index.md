@@ -36,8 +36,9 @@ head(insurance)
 5. 33   male 22.705        0     no northwest 21984.471
 6. 32   male 28.880        0     no northwest  3866.855
 7. 31 female 25.740        0     no southeast  3756.622
-```
+
 ![R Output](https://raw.githubusercontent.com/Marshall-Kesti/marshallkesti.github.io/9b475f2349fd175a6b29f14ddf5f41a0dbaa754e/assets/Outpu1.png)
+```
 
 Focusing on the first claim that older people pay more for health insurance compared to young people, we will use the ```max()``` and ```min()``` functions in order to gain insight about the ages we are working with. We will use the ```$``` sign to select the specific variable ```age```.
 
@@ -63,8 +64,9 @@ Baby_Boomers = subset(insurance, age >51)
 ```
 ```r
 #R output
-```
+
 ![R Output](https://raw.githubusercontent.com/Marshall-Kesti/marshallkesti.github.io/main/assets/Outpu2.png)
+```
 
 Now that we have the three subsets setup, we will begin to analyze them. The first analysis we will make involves using the ```mean()``` function to find the average price each group pays. We will use the ```$``` sign to select the specific variable ```charges```.
 
