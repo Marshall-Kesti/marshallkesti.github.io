@@ -37,6 +37,7 @@ head(insurance)
 6. 32   male 28.880        0     no northwest  3866.855
 7. 31 female 25.740        0     no southeast  3756.622
 ```
+![Output-1](https://github.com/Marshall-Kesti/marshallkesti.github.io/blob/main/assets/Output%201.png)
 
 Focusing on the first claim that older people pay more for health insurance compared to young people, we will use the ```max()``` and ```min()``` functions in order to gain insight about the ages we are working with.
 
@@ -63,4 +64,4 @@ Baby_Boomers = subset(insurance, age >51)
 ```r
 #R output
 ```
-![Output 2](https://github.com/Marshall-Kesti/marshallkesti.github.io/blob/main/assets/Output%202.png)
+![Output-2](https://github.com/Marshall-Kesti/marshallkesti.github.io/blob/main/assets/Output%202.png)
