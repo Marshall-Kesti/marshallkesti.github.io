@@ -5,7 +5,7 @@ layout: default
 # Welcome to My Portfolio!
 Below you will find projects that I have done in Rstudio, pages that will bring you to my Tableu, SQL, and Excel projects.
 
-[Tableu Project Page](./another-page.html).
+[Tableu Project Page](./another-page.md).
 
 
 ---
