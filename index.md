@@ -102,7 +102,7 @@ ggplot(insurance, aes(x=age, y= charges,color=age)) +
 ```
 #R ouput
 ```
-![R Output](https://raw.githubusercontent.com/Marshall-Kesti/marshallkesti.github.io/main/assets/datavis.png)
+![R Output](https://raw.githubusercontent.com/Marshall-Kesti/marshallkesti.github.io/main/assets/subsets.png)
 
 We will move onto answering the second claim now that _older people have a higher BMI(Body Mass Index) causing their health insurance to be more_. To begin answering this claim we will use the ```mean()``` function to find the average BMI of each subset. The ```$``` sign will be used again to select the specific variable ```bmi```.
 
