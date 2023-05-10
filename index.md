@@ -12,7 +12,7 @@ Below you will find projects that I have done in Rstudio, Tableu, SQL and Excel.
 ## _Insurance Analysis_ Project
 ### Description
 
-In this personal project I analyzed the data set _insurance.csv_ which I found on Kaggle from the user Alexis Cook. The purpose of this analysis was to discover if the following claims were correct or incorrect: baby boomers pay more for health insurance compared to millenials and gen x, baby boomers have a higher BMI(Body Mass Index) causing their health insurance to be more, and on average the number of baby boomers that smoke is greater than the other two groups, millenials and gen x.
+In this personal project I analyzed the data set _insurance.csv_ which I found on Kaggle from the user Alexis Cook. The purpose of this analysis was to discover if the following claims were correct or incorrect: older people pay more for health insurance compared to younger individuals, older people have a higher BMI(Body Mass Index) causing their health insurance to be more, and on average the number of older individuals that smoke is greater than younger people.
 
 ### Process
 
@@ -38,3 +38,17 @@ head(insurance)
 7. 31 female 25.740        0     no southeast  3756.622
 ```
 
+Focusing on the first claim that older people pay more for health insurance compared to young people, we will use the ```max()``` and ```min()``` functions in order to gain insight about the ages we are working with.
+
+```r
+# R code with syntax highlighting
+max(insurance$age)
+min(insurance$age)
+```
+```R
+# max() and min() output
+ max(insurance$age)
+[1] 64
+ min(insurance$age)
+[1] 18
+```
