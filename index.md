@@ -64,7 +64,7 @@ gen_x = subset(insurance, age >34 & age < 50)
 baby_boomers = subset(insurance, age >51)
 ```
 ```r
-#R output
+# R output
 ```
 ![R Output](https://raw.githubusercontent.com/Marshall-Kesti/marshallkesti.github.io/main/assets/subsets.png)
 
@@ -100,7 +100,7 @@ ggplot(insurance, aes(x=age, y= charges,color=age)) +
 ```
 
 ```r
-#R ouput
+# R ouput
 ```
 ![R Output](https://raw.githubusercontent.com/Marshall-Kesti/marshallkesti.github.io/main/assets/subsets.png)
 
@@ -113,7 +113,7 @@ mean(baby_boomers$bmi)
 ```
 
 ```r
-#R output
+# R output
 mean(millenials$bmi)
 [1] 30.05137
  mean(gen_x$bmi)
