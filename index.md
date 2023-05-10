@@ -5,7 +5,9 @@ layout: default
 # Welcome to My Portfolio!
 #### That is always growing;)
 
-On this page you will find projects that I have done in Rstudio. Below, are links to the other pages that contain projects that I have done using Tableu, SQL, and Excel.
+On this page you will find projects that I have done in Rstudio. 
+
+Below, are links to the other pages that contain projects that I have done using Tableu, SQL, and Excel.
 
 [Tableu Projects](./another-page.html).
 
