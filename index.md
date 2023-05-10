@@ -7,6 +7,8 @@ layout: default
 
 Below you will find projects that I have done in Rstudio, Tableu, SQL, and Excel.
 
+[Link to another page](./another-page.html).
+
 ---
 # Rstudio Projects
 
