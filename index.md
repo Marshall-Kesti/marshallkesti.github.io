@@ -103,3 +103,22 @@ ggplot(insurance, aes(x=age, y= charges,color=age)) +
 #R ouput
 ```
 ![R Output](https://raw.githubusercontent.com/Marshall-Kesti/marshallkesti.github.io/main/assets/datavis.png)
+
+We will move onto answering the second claim now that _older people have a higher BMI(Body Mass Index) causing their health insurance to be more_. To begin answering this claim we will use the ```mean()``` function to find the average BMI of each subset. The ```$``` sign will be used again to select the specific variable ```bmi```.
+
+```r
+mean(millenials$bmi)
+mean(gen_x$bmi)
+mean(baby_boomers$bmi)
+```
+
+```
+# R output
+mean(millenials$bmi)
+[1] 30.05137
+ mean(gen_x$bmi)
+[1] 30.5453
+ mean(baby_boomers$bmi)
+[1] 31.70093
+```
+Above, we can see that ```baby_boomers``` on average have the higher BMI compared to the other groups. This makes the claim _older people have a higher BMI(Body Mass Index) causing their health insurance to be more_ true.
