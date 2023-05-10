@@ -52,7 +52,7 @@ min(insurance$age)
  min(insurance$age)
 [1] 18
 ```
-Now that we know the maximum and minimum ages, we can divide the ages into three subsets using the ```subset()``` function. These three subsets will be millenials(18-34), gen x(35-50), and baby booomers(51-64). 
+Now that we know the maximum and minimum ages, we can divide the ages into three subsets using the ```subset()``` function. These three subsets will be ```millenials(18-34), gen x(35-50), and baby booomers(51-64)```. 
 
 ```r
 # R code with syntax highlighting
@@ -62,5 +62,5 @@ Baby_Boomers = subset(insurance, age >51)
 ```
 ```r
 #R output
-/Output 2.png
 ```
+![Output 2](github.githubassets.com/assets/output 2.png)
