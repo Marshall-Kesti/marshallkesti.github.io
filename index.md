@@ -63,4 +63,4 @@ Baby_Boomers = subset(insurance, age >51)
 ```r
 #R output
 ```
-![Output 2](github.githubassets.com/assets/output 2.png)
+![Output 2](https://github.com/Marshall-Kesti/marshallkesti.github.io/blob/main/assets/Output%202.png)
