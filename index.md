@@ -99,7 +99,7 @@ ggplot(insurance, aes(x=age, y= charges,color=age)) +
        caption = "Data source: insurance.csv from Kaggle User Alexis Cook")
 ```
 
-```
+```r
 #R ouput
 ```
 ![R Output](https://raw.githubusercontent.com/Marshall-Kesti/marshallkesti.github.io/main/assets/subsets.png)
