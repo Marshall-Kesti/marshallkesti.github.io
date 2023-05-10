@@ -28,7 +28,7 @@ library(head)
 head(insurance)
 ```
 ```r
-# head() output
+# R output
 1. age    sex    bmi children smoker    region   charges
 2. 19 female 27.900        0    yes southwest 16884.924
 3. 18   male 33.770        1     no southeast  1725.552
@@ -45,10 +45,19 @@ Focusing on the first claim that older people pay more for health insurance comp
 max(insurance$age)
 min(insurance$age)
 ```
-```R
-# max() and min() output
+```r
+# R output
  max(insurance$age)
 [1] 64
  min(insurance$age)
 [1] 18
 ```
+Now that we know the maximum and minimum ages, we can divide the ages into three subsets using the ```subset()``` function. These three subsets will be millenials(18-34), gen x(35-50), and baby booomers(51-64). 
+
+```r
+# R code with syntax highlighting
+Millenials = subset(insurance, age <=34)
+Gen_X = subset(insurance, age >34 & age < 50)
+Baby_Boomers = subset(insurance, age >51)
+```
+
