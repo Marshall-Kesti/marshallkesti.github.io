@@ -93,6 +93,7 @@ From this function, we can see that on average ```baby_boomers``` pay 18,298.07 
 Let's create a data visualization to show us how age affects the price of health insurance. To do this, we will use ```ggplot()``` which is apart of the ```tidyverse``` package we downloaded at the beginning. We also will use the function ```labs()``` to give the visualization a title and a caption that will contain the data source.
 
 ```r
+# R code with syntax highlighting 
 ggplot(insurance, aes(x=age, y= charges,color=age)) +
   geom_line(stat = "identity") + theme_minimal() +
   labs(title = "Comparing Age to Health Insurance Price",
@@ -107,6 +108,7 @@ ggplot(insurance, aes(x=age, y= charges,color=age)) +
 We will move onto answering the second claim now that _older people have a higher BMI(Body Mass Index) causing their health insurance to be more_. To begin answering this claim we will use the ```mean()``` function to find the average BMI of each subset. The ```$``` sign will be used again to select the specific variable ```bmi```.
 
 ```r
+# R code with syntax highlighting 
 mean(millenials$bmi)
 mean(gen_x$bmi)
 mean(baby_boomers$bmi)
@@ -122,3 +124,28 @@ mean(millenials$bmi)
 [1] 31.70093
 ```
 Above, we can see that ```baby_boomers``` on average have the higher BMI compared to the other groups. This makes the claim _older people have a higher BMI(Body Mass Index) causing their health insurance to be more_ true.
+
+Lastly, let's answer the last claim that _on average the number of older individuals that smoke is greater than younger people_. To do this we will use the ```count()``` function to see which subset has the most smokers. 
+
+```r
+# R code with syntax highlighting 
+count(millenials,smoker, sort = TRUE)
+count(gen_x,smoker,sort = TRUE)
+count(baby_boomers,smoker,sort = TRUE)
+```
+
+```r
+# R code with syntax highlighting
+count(millenials,smoker, sort = TRUE)
+  smoker   n
+1     no 433
+2    yes 116
+count(gen_x,smoker,sort = TRUE)
+  smoker   n
+1     no 314
+2    yes  90
+count(baby_boomers,smoker,sort = TRUE)
+  smoker   n
+1     no 269
+2    yes  58
+```
