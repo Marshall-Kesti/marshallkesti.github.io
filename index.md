@@ -55,13 +55,13 @@ min(insurance$age)
  min(insurance$age)
 [1] 18
 ```
-Now that we know the maximum and minimum ages, we can divide the ages into three subsets using the ```subset()``` function. These three subsets will be ```millenials(18-34), gen x(35-50), and baby booomers(51-64)```. 
+Now that we know the maximum and minimum ages, we can divide the ages into three subsets using the ```subset()``` function. These three subsets will be ```millenials(18-34), gen_x(35-50), and baby_booomers(51-64)```. 
 
 ```r
 # R code with syntax highlighting
-Millenials = subset(insurance, age <=34)
-Gen_X = subset(insurance, age >34 & age < 50)
-Baby_Boomers = subset(insurance, age >51)
+millenials = subset(insurance, age <=34)
+gen_x = subset(insurance, age >34 & age < 50)
+baby_boomers = subset(insurance, age >51)
 ```
 ```r
 #R output
@@ -73,17 +73,20 @@ Now that we have the three subsets setup, we will begin to analyze them. The fir
 
 ```r
 # R code with syntax highlighting 
-mean(Millenials$charges)
-mean(Gen_X$charges)
-mean(Baby_Boomers$charges)
+mean(millenials$charges)
+mean(gen_x$charges)
+mean(baby_boomers$charges)
 ```
 
 ```r
 # R output
- mean(Millenials$charges)
+ mean(millenials$charges)
 [1] 9673.317
- mean(Gen_X$charges)
+ mean(gen_x$charges)
 [1] 13744.29
- mean(Baby_Boomers$charges)
+ mean(baby_boomers$charges)
 [1] 18298.07
 ```
+
+From this function, we see that on average ```baby_boomers``` pay 18,298.07 for health insurance which means they pay the most compared to the other groups. This discovery makes the first claim that older people pay more for health insurance compared to younger individuals correct.
+
