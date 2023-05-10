@@ -9,6 +9,10 @@ On this page you will find projects that I have done in Rstudio. Below, are link
 
 [Tableu Projects](./another-page.html).
 
+[SQL Projects](./another-page2.html).
+
+[Excel Projects](./another-page3.html).
+
 
 ---
 # Rstudio Projects
