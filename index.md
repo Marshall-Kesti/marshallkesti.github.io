@@ -60,4 +60,7 @@ Millenials = subset(insurance, age <=34)
 Gen_X = subset(insurance, age >34 & age < 50)
 Baby_Boomers = subset(insurance, age >51)
 ```
-
+```r
+#R output
+/Output 2.png
+```
