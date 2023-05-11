@@ -9,7 +9,7 @@ On this page you will find projects that I have done in Tableau.
 
 Below are links to other pages that contain projects that I have done in Rstudio, SQL, and Excel.
 
-[Rstudio Projects](./index.html).
+[SQL Projects](./index.html).
 
 [SQL Projects](./another-page2.html).
 
