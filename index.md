@@ -11,9 +11,9 @@ Below are links to other pages that contain projects that I have done using Tabl
 
 [Tableau Projects](./another-page.html)
 
-[SQL Projects](./another-page2.html)
+[SQL Projects](./another-page2.html):construction:
 
-[Excel Projects](./another-page3.html)
+[Excel Projects](./another-page3.html):construction:
 
 
 ---
