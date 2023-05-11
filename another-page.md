@@ -28,7 +28,7 @@ In this personal project, I wanted to see which countries/regions had the most F
 
 ![Tableau Project](https://raw.githubusercontent.com/Marshall-Kesti/marshallkesti.github.io/main/assets/TableuF.png)
 
-#### [Interactive Visualization](./https://public.tableau.com/views/FacebookUsersAcrossWorldDraft/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link) 
+#### [Interactive Visualization](./https://public.tableau.com/views/FacebookUsersAcrossWorldDraft/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link.html) 
 
 ### Conclussion
 
