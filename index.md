@@ -9,11 +9,11 @@ On this page you will find projects that I have done in Rstudio.
 
 Below are links to other pages that contain projects that I have done using Tableau, SQL, and Excel.
 
-[Tableau Projects](./another-page.html).
+[Tableau Projects](./another-page.html)
 
-[SQL Projects](./another-page2.html).
+[SQL Projects](./another-page2.html)
 
-[Excel Projects](./another-page3.html).
+[Excel Projects](./another-page3.html)
 
 
 ---
