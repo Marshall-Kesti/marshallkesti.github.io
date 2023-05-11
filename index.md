@@ -3,7 +3,7 @@ layout: default
 ---
 
 # Welcome to My Portfolio!
-#### That is always growing;)
+#### This page is always growing;)
 
 On this page you will find projects that I have done in Rstudio. 
 
