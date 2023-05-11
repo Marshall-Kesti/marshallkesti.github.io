@@ -22,6 +22,10 @@ Below are links to other pages that contain projects that I have done in Rstudio
 
 ### Description
 
+In this personal project, I wanted to see which countries/regions had the most Facebook users. The main purpose of finding which countries/regions had the most Facebook users was to see the places that busineses should target as it relates to putting ads on Facebook. 
 
+### Tableau Visualization
+
+![Tableau Project](https://raw.githubusercontent.com/Marshall-Kesti/marshallkesti.github.io/main/assets/TableuF.png)
 
 
