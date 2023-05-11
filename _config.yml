@@ -2,3 +2,5 @@ theme: jekyll-theme-minimal
 title: Marshall Kesti
 logo: /assets/me.png
 description: Aspiring Data Analyst 
+plugins:
+  - jemoji
