@@ -29,7 +29,7 @@ In this personal project, I wanted to see which countries/regions had the most F
 
 <p class="view"><a href="https://public.tableau.com/app/profile/marshall.kesti/viz/FacebookUsersAcrossWorldDraft/Dashboard1">Interactive Visualization</a></p>
 
-### Conclussion
+### Conclusion
 
 From my visualization, I made a few valuable discovery that would assist businesses in deciding what countries to target. First, the top five countries with the most users are ```India(416.6M), the United States(240M), Indonesia(176.5M), Brazil(139M)```, and the ```Philiphines(91M)```. Knowing this, it would be wise for a business to focus on these countries when putting ads, post, etc. on Facebook becuase these countries would result in the most reach. 
 
