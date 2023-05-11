@@ -2,10 +2,10 @@
 layout: default
 ---
 
-# Welcome to My Tableu Page!
+# Welcome to My Tableau Page!
 #### This page is always growing ;)
 
-On this page you will find projects that I have done in Tableu.
+On this page you will find projects that I have done in Tableau.
 
 Below are links to other pages that contain projects that I have done in Rstudio, SQL, and Excel.
 
@@ -16,5 +16,5 @@ Below are links to other pages that contain projects that I have done in Rstudio
 [Excel Projects](./another-page3.html).
 
 ---
-# Tableu Projects
+# Tableau Projects
 
