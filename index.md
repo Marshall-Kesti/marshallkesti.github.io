@@ -169,7 +169,7 @@ Looking at the ```yes``` we see that millenials have the most smokers making the
 During this project, we discovered that older people pay more for health insurance compared to younger individuals, older people have a higher BMI(Body Mass Index) causing their health insurance to be more, and that millenials smoke more than the other two groups baby boomers and gen x. Although this was a personal project, these findings have some real world use. Becuase of this analysis people could get an idea for when to expect their health insurance price to increase and how an unhealthy lifestyle could cost them more.
 
 
-## _Prices_of_Packaging_Materials_
+## _Prices of Packaging Materials_ Analysis
 ### Description
 
 In this project, which I did for a Pack Form Distributor, I retreived data from the FRED (Federal Reserve Economic Data) API (Application Programming Interface). The reason I chose to retreive the data from this data base is because most if not all of the data is up to date and clean. The purpose of this analysis was to analyse the three most popular materials(foil, plastic, paper) that this Pack Form Distributor gets requested to see how the prices have flucated in the past five years. The main goal was to create a visualization for the distributor so that he was able to see patterns in the prices of the materials. 
