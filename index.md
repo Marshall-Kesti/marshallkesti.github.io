@@ -335,7 +335,7 @@ ggplot(aes(date, value, colour = type)) +
   ```
   
   ```r
-  ``` # R output
+  # R output
   ```
   ![R Output](https://raw.githubusercontent.com/Marshall-Kesti/marshallkesti.github.io/main/assets/dataviz23.png)
   
