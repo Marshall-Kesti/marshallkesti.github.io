@@ -167,3 +167,176 @@ Looking at the ```yes``` we see that millenials have the most smokers making the
 
 ### Conclusion
 During this project, we discovered that older people pay more for health insurance compared to younger individuals, older people have a higher BMI(Body Mass Index) causing their health insurance to be more, and that millenials smoke more than the other two groups baby boomers and gen x. Although this was a personal project, these findings have some real world use. Becuase of this analysis people could get an idea for when to expect their health insurance price to increase and how an unhealthy lifestyle could cost them more.
+
+
+## _Prices_of_Packaging_Materials_
+### Description
+
+In this project, which I did for a Pack Form Distributor, I retreived data from the FRED (Federal Reserve Economic Data) API (Application Programming Interface). The reason I chose to retreive the data from this data base is because most if not all of the data is up to date and clean. The purpose of this analysis was to analyse the three most popular materials(foil, plastic, paper) that this Pack Form Distributor gets requested to see how the prices have flucated in the past five years. The main goal was to create a visualization for the distributor so that he was able to see patterns in the prices of the materials. 
+
+### Process
+
+We will first request a FRED API key which can be found following the link https://fredaccount.stlouisfed.org/apikeys. For security purposes, I will not disclose the key which I was given.
+
+Next, we will install the package ```fredr()``` which provides a complete set of R bindings to the Federal Reserve of Economic Data, the ```ggplot2``` package to create the visualization, and load the packages.
+
+```r
+# R code with syntax highlighting
+install.packages("fredr")
+install.packages("ggplot2")
+library(ggplot2)
+library(fredr)
+library(dplyr)
+```
+
+Then we will run the ```fredr_set_key()``` which sets the FRED API key as an environment variable for use with the service.
+
+```r
+# R code with syntax highlighting
+fredr_set_key("insert FRED API key here")
+```
+
+Now we will make three specific requests to the API which will be requests for plastic, paper, and foil data using the ```fredr()``` function and the ```series_id()``` function to specify what data we want using the ids associated with the data. We will also select the specific time frames that we want using the ```observation_start()``` and the ```observation_end()``` functions.
+
+```r
+# R code with syntax highlighting
+dirty_plastic <- fredr(
+series_id = "WPU072A0101",
+  observation_start = as.Date("2018-04-15"),
+  observation_end = as.Date("2023-04-15")
+)
+
+
+dirty_paper <- fredr(
+  series_id = "WPU091303",
+  observation_start = as.Date("2018-04-15"),
+  observation_end = as.Date("2023-04-15")
+)
+
+dirty_foil <- fredr(
+  series_id = "PCU3313153313150",
+  observation_start = as.Date("2018-04-15"),
+  observation_end = as.Date("2023-04-15")
+)
+```
+
+```r
+# R output
+```
+![R Output](https://raw.githubusercontent.com/Marshall-Kesti/marshallkesti.github.io/main/assets/Screenshot%202023-05-15%20at%204.02.09%20PM.png)
+
+Let's now look preview the data sets using the ```head()``` function to see what we are working with
+
+```r
+# R code with syntax highlighting
+  date       series_id     value realtime…¹ realtime…²
+  <date>     <chr>         <dbl> <date>     <date>    
+1 2018-04-01 PCU331315331…  209. 2023-05-15 2023-05-15
+2 2018-05-01 PCU331315331…  220. 2023-05-15 2023-05-15
+3 2018-06-01 PCU331315331…  224. 2023-05-15 2023-05-15
+4 2018-07-01 PCU331315331…  215. 2023-05-15 2023-05-15
+5 2018-08-01 PCU331315331…  215. 2023-05-15 2023-05-15
+6 2018-09-01 PCU331315331…  213. 2023-05-15 2023-05-15
+# … with abbreviated variable names ¹​realtime_start,
+#   ²​realtime_end
+> head(dirty_paper)
+# A tibble: 6 × 5
+  date       series_id value realtime_start realtime…¹
+  <date>     <chr>     <dbl> <date>         <date>    
+1 2018-04-01 WPU091303  258. 2023-05-15     2023-05-15
+2 2018-05-01 WPU091303  258. 2023-05-15     2023-05-15
+3 2018-06-01 WPU091303  257. 2023-05-15     2023-05-15
+4 2018-07-01 WPU091303  258. 2023-05-15     2023-05-15
+5 2018-08-01 WPU091303  259. 2023-05-15     2023-05-15
+6 2018-09-01 WPU091303  258. 2023-05-15     2023-05-15
+# … with abbreviated variable name ¹​realtime_end
+> head(dirty_plastic)
+# A tibble: 6 × 5
+  date       series_id   value realtime_s…¹ realtime…²
+  <date>     <chr>       <dbl> <date>       <date>    
+1 2018-04-01 WPU072A0101  116. 2023-05-15   2023-05-15
+2 2018-05-01 WPU072A0101  117. 2023-05-15   2023-05-15
+3 2018-06-01 WPU072A0101  117. 2023-05-15   2023-05-15
+4 2018-07-01 WPU072A0101  116. 2023-05-15   2023-05-15
+5 2018-08-01 WPU072A0101  117. 2023-05-15   2023-05-15
+6 2018-09-01 WPU072A0101  118. 2023-05-15   2023-05-15
+# … with abbreviated variable names ¹​realtime_start,
+#   ²​realtime_end
+```
+
+We will now change the data within the ```series_id``` column so it reflects each type of material. To do this, we will use the mutate() function.
+
+```r
+# R code with syntax highlighting
+cleaner_foil <- dirty_foil%>% 
+  mutate(series_id = recode(series_id, PCU3313153313150
+= "foil"))
+
+cleaner_paper <- dirty_paper %>% 
+  mutate(series_id = recode(series_id, WPU091303
+= "paper"))
+
+cleaner_plastic <- dirty_plastic %>% 
+  mutate(series_id = recode(series_id, WPU072A0101
+= "plastic"))
+```
+
+```r
+# R output
+```
+![R Output](https://raw.githubusercontent.com/Marshall-Kesti/marshallkesti.github.io/main/assets/Screenshot%202023-05-15%20at%204.09.44%20PM.png)
+
+Now we will combine the data sets into one set called ```materials``` using the ```rbind()``` function
+
+```r
+# R code with syntax highlighting
+materials <- rbind(cleaner_foil,cleaner_paper,cleaner_plastic)
+```
+
+```r
+# R output
+```
+![R Output](https://github.com/Marshall-Kesti/marshallkesti.github.io/blob/main/assets/Screenshot%202023-05-15%20at%204.14.29%20PM.png)
+
+Since we changed the data within the column ```series_id``` in all three of the data sets, we will change the name of the column to ```type``` instead of ```series_id```. Using the ```head()``` function we can see that change.
+
+```r
+# R code with syntax highlighting
+colnames(materials)[colnames(materials) == "series_id"] <- "type"
+head(materials)
+```
+
+```r
+# R output
+ date       type  value realtime_start realtime_end
+   <date>     <chr> <dbl> <date>         <date>      
+ 1 2018-04-01 foil   209. 2023-05-15     2023-05-15  
+ 2 2018-05-01 foil   220. 2023-05-15     2023-05-15  
+ 3 2018-06-01 foil   224. 2023-05-15     2023-05-15  
+ 4 2018-07-01 foil   215. 2023-05-15     2023-05-15  
+ 5 2018-08-01 foil   215. 2023-05-15     2023-05-15  
+ 6 2018-09-01 foil   213. 2023-05-15     2023-05-15  
+ 7 2018-10-01 foil   213. 2023-05-15     2023-05-15  
+ 8 2018-11-01 foil   209. 2023-05-15     2023-05-15  
+ 9 2018-12-01 foil   209. 2023-05-15     2023-05-15  
+10 2019-01-01 foil   208. 2023-05-15     2023-05-15 
+ ```
+ 
+ Finally, we will make a line chart using the ```ggplot()``` function  to show how each type of materials price has changed over the last five year, add the title _Materials Price and Date_, and cite the source of the data by adding a caption.
+ 
+ ```r
+ # R code with syntax highlighting
+ materials %>% 
+ggplot(aes(date, value, colour = type)) +
+  geom_line(size = 1) +
+  theme_minimal() +
+  labs(title = "Materials Price and Date", caption = "Source: U.S. Bureau of Labor Statistics")
+  ```
+  
+  ```r
+  ``` # R output
+  ```
+  ![R Output](https://raw.githubusercontent.com/Marshall-Kesti/marshallkesti.github.io/main/assets/dataviz23.png)
+  
+### Conclusion
+Becuase of this analysis, I was able to find trends in the material pricing that will help the distributor make informed pricing descisions going forward.
