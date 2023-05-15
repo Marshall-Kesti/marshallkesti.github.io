@@ -297,7 +297,7 @@ materials <- rbind(cleaner_foil,cleaner_paper,cleaner_plastic)
 ```r
 # R output
 ```
-![R Output](https://github.com/Marshall-Kesti/marshallkesti.github.io/blob/main/assets/Screenshot%202023-05-15%20at%204.14.29%20PM.png)
+![R Output](https://raw.githubusercontent.com/Marshall-Kesti/marshallkesti.github.io/main/assets/Screenshot%202023-05-15%20at%204.14.29%20PM.png)
 
 Since we changed the data within the column ```series_id``` in all three of the data sets, we will change the name of the column to ```type``` instead of ```series_id```. Using the ```head()``` function we can see that change.
 
