@@ -169,6 +169,7 @@ Looking at the ```yes``` we see that millenials have the most smokers making the
 During this project, we discovered that older people pay more for health insurance compared to younger individuals, older people have a higher BMI(Body Mass Index) causing their health insurance to be more, and that millenials smoke more than the other two groups baby boomers and gen x. Although this was a personal project, these findings have some real world use. Becuase of this analysis people could get an idea for when to expect their health insurance price to increase and how an unhealthy lifestyle could cost them more.
 
 
+---
 ## _Prices of Packaging Materials_ Analysis
 ### Description
 
