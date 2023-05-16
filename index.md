@@ -177,7 +177,7 @@ In this project, which I did for a Pack Form Distributor, I retreived data from 
 
 ### Process
 
-We will first request a FRED API key which can be found following the link ![FRED API Key Link](./FRED.md) For security purposes, I will not disclose the key which I was given.
+We will first request a FRED API key from the website. For security purposes, I will not disclose the key which I was given.
 
 Next, we will install the package ```fredr()``` which provides a complete set of R bindings to the Federal Reserve of Economic Data, the ```ggplot2``` package to create the visualization, and load the packages.
 
