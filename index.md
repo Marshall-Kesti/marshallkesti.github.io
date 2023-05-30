@@ -340,4 +340,4 @@ ggplot(aes(date, value, colour = type)) +
   ![R Output](https://raw.githubusercontent.com/Marshall-Kesti/marshallkesti.github.io/main/assets/dataviz23.png)
   
 ### Conclusion
-Becuase of this analysis, I was able to find trends in the material pricing that will help the distributor make informed pricing descisions going forward.
+Because of this analysis, I was able to find trends in the material pricing that will help the distributor make informed pricing descisions going forward.
