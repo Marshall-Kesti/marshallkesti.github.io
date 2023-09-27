@@ -428,7 +428,7 @@ def swing_down(candles, index):
         return True
 ```
 
-Finally, I had to write the code for the indicator to be printed out and properly formatted. Below is that code in the order of :
+Finally, I had to write the code for the indicator to be printed out and properly formatted. Below is that code:
 
 ```
 with open('dataframe.csv') as f:
@@ -442,4 +442,13 @@ with open('dataframe.csv') as f:
         elif swing_down(candles, i):
             print("Second Pattern Detected       {}                            {}                                  {}". format(candles[i]['High'], candles[i]['Low'], candles[i]['Date']))
 
+```
+
+```
+# Python ouput (example)
+Pattern Detected              273.92999267578125                            262.4599914550781                                  2023-09-20 00:00:00-04:00
+Second Pattern Detected       260.8599853515625                            254.2100067138672                                  2023-09-21 00:00:00-04:00
+Second Pattern Detected       257.7900085449219                            244.47999572753906                                  2023-09-22 00:00:00-04:00
+Second Pattern Detected       247.10000610351562                            238.30999755859375                                  2023-09-25 00:00:00-04:00
+Pattern Detected              249.54989624023438                            241.6699981689453                                  2023-09-26 00:00:00-04:00
 ```
