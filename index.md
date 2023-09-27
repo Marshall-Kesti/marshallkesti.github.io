@@ -379,7 +379,7 @@ print(dataframe.to_csv())
 Next, in order to transfer the output into a csv file, I entered the following into the terminal:
 
 ```
-Python3 "name_of_project.py" > "name_of_file_you_want_to _reate.csv"
+Python3 name_of_project.py > name_of_file.csv
 ```
 
 ```
