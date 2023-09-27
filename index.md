@@ -348,6 +348,10 @@ Because of this analysis, I was able to find trends in the material pricing that
 
 During the time of this project, I was being mentored by a full time trader. One of the processes that he was educating me on was backtesting. This involves collecting trades that meet your specficed critera from a stock that you are intrested in trading. At first collecting the trades was educative and fascinating, although, after the hundreth some I decided to reallocate my time to finding a more efficent way to quickly and accuratly collected the desired data. 
 
+### Note
+
+Due to this project involving information not obtainble by the general public, broad terms will be used in place of specfic terms throughout the project (especially within the code).
+
 ### Process
 
 In order to begin writing the code for this project, I needed to make sure that I was able to define the patterns that I wanted Python to uncover. I did this by grabbing a piece of scratch paper and jotting down the terms. Then, I established my main objective for the project... to create a simple system that could detect the relationships between numbers. 
@@ -393,4 +397,33 @@ Date,Open,High,Low,Close,Volume,Dividends,Stock Splits
 2022-09-29 00:00:00-04:00,282.760009765625,283.6499938964844,265.7799987792969,268.2099914550781,77620600,0.0,0.0
 ```
 
-Once I had the data in a csv file, it was time to start writing the code for the stock indicator. 
+Once I had the data in a csv file, it was time to start writing the code for the stock indicator. The first step in this process was creating definitions and importing a csv package. 
+
+```
+import csv
+
+
+def is_bearish_candlestick(candle):
+    return float(candle['criteria'] > candle['critera'])
+
+def is_bullish_candlestick(candle):
+    return float(candle['criteria'] > candle['criteria'])
+
+def pattern1(candles, index):
+    current_day = candles[index]
+    previous_day = candles[index-1]
+
+    if is_bearish_candlestick(previous_day) \
+        and float(current_day['criteria'] > previous_day['critera']) \
+        and float(current_day ['critera'] > previous_day['criteria']):
+        return True
+
+def swing_down(candles, index):
+    current_day = candles[index]
+    previous_day = candles[index-1]
+
+    if is_bullish_candlestick(previous_day) \
+        and float(current_day['critera] < previous_day['critera']) \
+        and float(current_day ['critera'] < previous_day['critera']):
+        return True
+
