@@ -392,3 +392,5 @@ Date,Open,High,Low,Close,Volume,Dividends,Stock Splits
 2022-09-28 00:00:00-04:00,283.0799865722656,289.0,277.57000732421875,287.80999755859375,54664800,0.0,0.0           
 2022-09-29 00:00:00-04:00,282.760009765625,283.6499938964844,265.7799987792969,268.2099914550781,77620600,0.0,0.0
 ```
+
+Once I had the data in a csv file, it was time to start writing the code for the stock indicator. 
