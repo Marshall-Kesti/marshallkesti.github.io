@@ -426,4 +426,4 @@ def swing_down(candles, index):
         and float(current_day['critera] < previous_day['critera']) \
         and float(current_day ['critera'] < previous_day['critera']):
         return True
-
+```
