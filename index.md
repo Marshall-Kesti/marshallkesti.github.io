@@ -342,7 +342,7 @@ ggplot(aes(date, value, colour = type)) +
 ### Conclusion
 Because of this analysis, I was able to find trends in the material pricing that will help the distributor make informed pricing descisions going forward.
 
-
+---
 ## _Python Stock Indicator_
 ### Description
 
