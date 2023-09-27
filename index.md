@@ -341,3 +341,54 @@ ggplot(aes(date, value, colour = type)) +
   
 ### Conclusion
 Because of this analysis, I was able to find trends in the material pricing that will help the distributor make informed pricing descisions going forward.
+
+
+## _Python Stock Indicator_
+### Description
+
+During the time of this project, I was being mentored by a full time trader. One of the processes that he was educating me on was backtesting. This involves collecting trades that meet your specficed critera from a stock that you are intrested in trading. At first collecting the trades was educative and fascinating, although, after the hundreth some I decided to reallocate my time to finding a more efficent way to quickly and accuratly collected the desired data. 
+
+### Process
+
+In order to begin writing the code for this project, I needed to make sure that I was able to define the patterns that I wanted Python to uncover. I did this by grabbing a piece of scratch paper and jotting down the terms. Then, I established my main objective for the project... to create a simple system that could detect the relationships between numbers. 
+
+The first step I took was importing the data using a package in python called "yfinance."
+
+```
+import yfinance as yf
+
+stock = yf.Ticker("ticker")
+
+dataframe = stock.history(period="1y")
+
+print(dataframe.to_csv())
+```
+
+``` 
+# Python output (example)
+```
+```
+2023-09-20 00:00:00-04:00,267.0400085449219,273.92999267578125,262.4599914550781,262.5899963378906,122514600,0.0,0.0
+2023-09-21 00:00:00-04:00,257.8500061035156,260.8599853515625,254.2100067138672,255.6999969482422,119531000,0.0,0.0
+2023-09-22 00:00:00-04:00,257.3999938964844,257.7900085449219,244.47999572753906,244.8800048828125,127024300,0.0,0.0
+2023-09-25 00:00:00-04:00,243.3800048828125,247.10000610351562,238.30999755859375,246.99000549316406,104636600,0.0,0.0
+2023-09-26 00:00:00-04:00,242.97999572753906,249.5500030517578,241.66000366210938,244.1199951171875,101741600,0.0,0.0
+2023-09-27 00:00:00-04:00,244.26199340820312,245.3300018310547,241.4199981689453,243.13999938964844,36984949,0.0,0.0
+```
+
+Next, in order to transfer the output into a csv file, I entered the following into the terminal:
+
+```
+Python3 "name_of_project.py" > "name_of_file_you_want_to _reate.csv"
+```
+
+```
+# Python output (example)
+```
+```
+Date,Open,High,Low,Close,Volume,Dividends,Stock Splits                                                             
+2022-09-26 00:00:00-04:00,271.8299865722656,284.0899963378906,270.30999755859375,276.010009765625,58076900,0.0,0.0 
+2022-09-27 00:00:00-04:00,283.8399963378906,288.6700134277344,277.510009765625,282.94000244140625,61925200,0.0,0.0 
+2022-09-28 00:00:00-04:00,283.0799865722656,289.0,277.57000732421875,287.80999755859375,54664800,0.0,0.0           
+2022-09-29 00:00:00-04:00,282.760009765625,283.6499938964844,265.7799987792969,268.2099914550781,77620600,0.0,0.0
+```
