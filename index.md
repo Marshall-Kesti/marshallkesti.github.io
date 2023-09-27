@@ -427,3 +427,19 @@ def swing_down(candles, index):
         and float(current_day ['critera'] < previous_day['critera']):
         return True
 ```
+
+Finally, I had to write the code for the indicator to be printed out and properly formatted. Below is that code in the order of :
+
+```
+with open('dataframe.csv') as f:
+    reader = csv.DictReader(f)
+    print(reader)
+    candles = list(reader)
+
+    for i in range(1, len(candles)):
+        if swing_up(candles, i):
+            print("Pattern Detected              {}                            {}                                  {}".       format(candles[i]['High'], candles[i]['Low'], candles[i]['Date']))
+        elif swing_down(candles, i):
+            print("Second Pattern Detected       {}                            {}                                  {}". format(candles[i]['High'], candles[i]['Low'], candles[i]['Date']))
+
+```
