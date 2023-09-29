@@ -10,7 +10,7 @@ layout: default
 ## _Python Stock Indicator_
 ### Description
 
-During the time of this project, I was being mentored by a full time trader. One of the processes that he was educating me on was backtesting. This involves collecting trades that meet your specficed critera from a stock that you are intrested in trading. At first collecting the trades was educative and fascinating, although, after the hundreth some I decided to reallocate my time to finding a more efficent way to quickly and accuratly collected the desired data. 
+During the time of this project, I was being mentored by a full time trader. One of the processes that he was educating me on was backtesting. This involves collecting trades that meet your specficed critera from a stock that you are intrested in trading. At first collecting the trades was educative, but after the hundreth some trade, I decided to reallocate my time to finding a more efficent way to quickly and accuratly collect the desired data. 
 
 ### Note
 
