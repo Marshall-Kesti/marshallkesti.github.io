@@ -92,7 +92,7 @@ def swing_down(candles, index):
         return True
 ```
 
-Finally, I had to write the code for the indicator to be printed out and properly formatted. Below is that code:
+Once everything was defined, I had to write the code for the indicator to be printed out and properly formatted. Below is that code:
 
 ```
 with open('dataframe.csv') as f:
@@ -116,3 +116,21 @@ Second Pattern Detected       257.7900085449219                            244.4
 Second Pattern Detected       247.10000610351562                            238.30999755859375                                  2023-09-25 00:00:00-04:00
 Pattern Detected              249.54989624023438                            241.6699981689453                                  2023-09-26 00:00:00-04:00
 ```
+
+Finally, I could take the data that met the specified criteria and insert it into a csv file for further analysis. To do this, I entered the following into the terminal:
+
+```
+python3 project.py > newdata.csv
+
+```
+
+```
+# Python output (example)
+```
+```
+Pattern Detected              288.6700134277344                            277.510009765625                                  2022-09-27 00:00:00-04:00
+Pattern Detected              289.0                            277.57000732421875                                  2022-09-28 00:00:00-04:00
+Second Pattern Detected       283.6499938964844                            265.7799987792969                                  2022-09-29 00:00:00-04:00
+Second Pattern Detected       275.57000732421875                            262.4700012207031                                  2022-09-30 00:00:00-04:00
+```
+
