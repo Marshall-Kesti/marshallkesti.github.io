@@ -121,7 +121,6 @@ Finally, I could take the data that met the specified criteria and insert it int
 
 ```
 python3 project.py > newdata.csv
-
 ```
 
 ```
@@ -134,3 +133,6 @@ Second Pattern Detected       283.6499938964844                            265.7
 Second Pattern Detected       275.57000732421875                            262.4700012207031                                  2022-09-30 00:00:00-04:00
 ```
 
+### Conclusion
+
+This project made the process of collecting specific data quick and easy, resulting in the ability to conducts analyses faster. 
