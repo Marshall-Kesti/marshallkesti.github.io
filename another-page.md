@@ -11,9 +11,6 @@ Below are links to other pages that contain projects that I have done in Rstudio
 
 [Rstudio Projects/ Main Page](./index.md)
 
-[SQL Projects](./another-page2.html):construction:
-
-[Excel Projects](./another-page3.html):construction:
 
 ---
 # Tableau Projects
